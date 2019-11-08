@@ -55,13 +55,13 @@ public final class Configurator {
 
     private static final Properties CONFIG = new Properties();
 
-    static {
-        try (InputStream in = ResourceLoader.getResourceAsStream("ical4j.properties")) {
-            CONFIG.load(in);
-        } catch (IOException | NullPointerException e) {
-            LOG.info("ical4j.properties not found.");
-        }
-    }
+    // static {
+    //     try (InputStream in = ResourceLoader.getResourceAsStream("ical4j.properties")) {
+    //         CONFIG.load(in);
+    //     } catch (IOException | NullPointerException e) {
+    //         LOG.info("ical4j.properties not found.");
+    //     }
+    // }
 
     /**
      * Constructor made private to enforce static nature.
